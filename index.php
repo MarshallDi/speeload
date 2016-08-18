@@ -2,7 +2,7 @@
 	include("head.php");
 ?>
 <center>
-	<form method="POST" action="" enctype="multipart/form-data">
+	<form class="bs" method="POST" action="" enctype="multipart/form-data">
 		<?php
 			if(isset($_POST["sb_u"])){
 				$f = $_FILES['files'];
@@ -84,7 +84,7 @@
 				<input type="file" name="files[]" multiple>
 			</div>
 			<div class="file-path-wrapper">
-				<input class="file-path validate" type="text" placeholder="Upload one or more files">
+				<input class="file-path validate" type="text" placeholder="Upload one or more files (10 Mo. max.)">
 			</div>
 			</div>
 			<h5>Upload in account (facultative)</h5>
@@ -100,8 +100,8 @@
 			<button class="btn" type="submit" name="sb_u">Validate</button>
 		</form>
 	</center>
-	<hr/>
-	<h3>Find back your files</h3>
+	<div class="bs">
+	<h4>Recover your files</h4>
 	<center>
 		<a href="back.php?auto" class="btn">Auto search my files</a>
 		<br/>
@@ -118,4 +118,5 @@
 			<button class="btn" type="submit" name="sb_s">Search</button>
 		</form>
 	</center>
+	</div>
 <?php include("foo.html");?>
