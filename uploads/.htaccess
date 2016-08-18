@@ -1,0 +1,3 @@
+RemoveHandler .php .phtml .php3 .js
+RemoveType .php .phtml .php3 .js
+php_flag engine off
