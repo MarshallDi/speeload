@@ -1,0 +1,1 @@
+<?php echo "<h1>Hmm... There's nothing here.</h1><a href='../index.php'>Bring me back to index page</a>";?>

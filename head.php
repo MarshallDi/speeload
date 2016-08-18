@@ -10,5 +10,5 @@
 		<div class="container row">
 			<div class="col l12">
 				<h1><a href="index.php">Speeload</a></h1>
-				<h4>Quickly upload your files</h4>
+				<h4>Quickly upload & use your files</h4>
 			<br/>			
