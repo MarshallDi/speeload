@@ -1,4 +1,10 @@
 <?php
+	$d1="users/";
+	$d2="uploads/";
+	
+	function moku($d2,$comp,$name){
+		echo msg_ok("","User file created : <b><a target='blank' href='$d2$comp'>{$name}</a></b>.");
+		}
 	
 	function msg_ok($t,$s=""){
 		echo "<div class=\"collection\">
@@ -31,5 +37,5 @@
 	
 	function del($s){
 		@unlink($s);
-		}
+	}
 ?>
