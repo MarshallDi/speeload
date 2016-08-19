@@ -3,7 +3,7 @@
 <br/>
 <?php
 	echo $bti;
-	$auto=(isset($_GET["auto"]))?$_GET["auto"]:false;
+	$auto=(isset($_GET["auto"]))?"auto":false;
 	$sbu=(isset($_POST["usr_s"])&&!empty($_POST["usr_s"]))?sha1(md5($_POST["usr_s"])):false;
 	$sbp=(isset($_POST["pw_s"])&&!empty($_POST["pw_s"]))?sha1($_POST["pw_s"]."spd"):false;
 	if($auto||$sbu){
@@ -24,7 +24,7 @@
 					echo msg_err("Access forbidden.","Incorrect password.");
 				}
 				}else{
-				echo msg_err("No file found.","This repertory doesn't exist.");
+				echo msg_err("No file found.","This repertory doesn't exists.");
 			}
 		}
 	}
