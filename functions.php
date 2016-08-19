@@ -2,7 +2,7 @@
 	$d1="users/";
 	$d2="uploads/";
 	$bti="<a href='index.php' class='btn'>Back to index page</a>";
-	$fb="http://flavien.berwick.fr/projects/speeload/uploads/";
+	$fb="http://speeload.com/uploads/";
 	
 	function getToken($l=10){
 		$token = "";
