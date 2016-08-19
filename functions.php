@@ -1,10 +1,11 @@
 <?php
 	$d1="users/";
 	$d2="uploads/";
-	$bti="<a href='index.php' class='btn right'>Back to index page</a>";
+	$bti="<a href='index.php' class='btn'>Back to index page</a>";
+	$fb="http://flavien.berwick.fr/projects/speeload/uploads/";
 	
 	function tabJson($j){
-		$r="<table><th>Name</th><th>Ext.</th><th>Options</th><th>Date</th>";
+		$r="<table class=\"responsive-table\"><th>Name</th><th>Ext.</th><th>Options</th><th>Date</th>";
 		foreach($j["files"] as $f){
 			$r.= "<tr><td>{$f["name"]}</td><td><span class=\"collection badge yellow\" style=\"right:initial;position:relative;\">{$f["ext"]}</span></td><td><b><a href='uploads/{$f["comp"]}'>Download</a></b></td><td>".date("d/m/y h:i:s",$f["date"])."</td></tr>";
 		}
