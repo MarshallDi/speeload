@@ -23,7 +23,10 @@
 									$ext=$ex[count($ex)-1];
 									$tmp=$f["tmp_name"][$i];
 									$cf=false;
-									$md5=substr(base64_encode(md5(uniqid().time().$name)),0,10);
+									$md5=getToken();
+									while(file_exists($d2.$md5)){
+										$md5=getToken();
+										}
 									$comp=$md5.".".$ext;
 									$ova=array("name"=>$name,"md5"=>$md5,"comp"=>$comp,"ext"=>$ext,"size"=>$size,"date"=>time());
 									if(move_uploaded_file($tmp,$d2.$comp)){
