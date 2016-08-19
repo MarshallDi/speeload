@@ -132,4 +132,4 @@
 			</form>
 		</center>
 	</div>
-	<?php include("foo.html");?>	
+	<?php include("foo.php");?>	
