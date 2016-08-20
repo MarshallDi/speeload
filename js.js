@@ -1,7 +1,3 @@
-(function (){
-	var infos=document.getElementById("infos");
-	infos.innerHTML='<span class="greent"><b>Ready !</b></span>';
-})();
 function dis(){
 	var infos=document.getElementById("infos");
 	if(document.getElementById("fi").value != ""){

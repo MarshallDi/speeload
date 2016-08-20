@@ -13,7 +13,7 @@
 				$j=json_decode(file_get_contents($d1.$ip),true);
 				echo tabJson($j);
 				}else{
-				echo msg_err("No file found.","You haven't uploaded any file yet.");
+				echo ic("No file found.","You haven't uploaded any file yet.");
 			}
 			}else if($sbu&&$sbp){
 			if(file_exists($d1.$sbu)){
@@ -21,10 +21,10 @@
 				if($j["pwd"]==$sbp){
 					echo tabJson($j);
 					}else{
-					echo msg_err("Access forbidden.","Incorrect password.");
+					echo ic("Access forbidden.","Incorrect password.");
 				}
 				}else{
-				echo msg_err("No file found.","This repertory doesn't exists.");
+				echo ic("No file found.","This repertory doesn't exists.");
 			}
 		}
 	}
