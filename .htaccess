@@ -2,5 +2,11 @@
 SetOutputFilter DEFLATE
 </Files>
 <ifModule mod_headers.c>
-    Header set Connection keep-alive
+Header set Connection keep-alive
 </ifModule>
+<IfModule mod_expires.c>
+<FilesMatch "\.(jpe?g|png|gif|js|css|svg)$">
+ExpiresActive On
+ExpiresDefault "access plus 1 month"
+</FilesMatch>
+</IfModule>
